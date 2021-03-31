@@ -1,0 +1,17 @@
+<script type="text/javascript">
+    Homey.emit('add_device', (error, device) => {
+        if (error) {
+            Homey.error(error);
+            return;
+        }
+
+        Homey.createDevice(device, error => {
+            if (error) {
+                Homey.error(error);
+                return;
+            }
+            
+            Homey.done();
+        });
+    });
+</script>

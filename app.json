@@ -1,0 +1,224 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "com.rassk.komfovent",
+  "version": "0.0.1",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "name": {
+    "en": "Komfovent C6"
+  },
+  "description": {
+    "en": "Adds support for Komfovent C6 controller."
+  },
+  "category": [
+    "climate"
+  ],
+  "permissions": [],
+  "images": {
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png"
+  },
+  "author": {
+    "name": "Rasmus Kuusmann",
+    "email": "rasmus.kuusmann@gmail.com"
+  },
+  "drivers": [
+    {
+      "id": "c6",
+      "name": {
+        "en": "C6"
+      },
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "require_access"
+          },
+          "options": {
+            "singular": true
+          }
+        },
+        {
+          "id": "require_access",
+          "template": "login_credentials"
+        },
+        {
+          "id": "add_device"
+        }
+      ],
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "General setings"
+          },
+          "children": [
+            {
+              "id": "ip",
+              "type": "text",
+              "label": {
+                "en": "IP"
+              }
+            },
+            {
+              "id": "username",
+              "type": "text",
+              "label": {
+                "en": "Username"
+              }
+            },
+            {
+              "id": "Password",
+              "type": "password",
+              "label": {
+                "en": "Password"
+              }
+            }
+          ]
+        }
+      ],
+      "class": "other",
+      "capabilities": [
+        "meter_power",
+        "measure_power",
+        "measure_humidity.panel",
+        "measure_temperature.panel",
+        "measure_temperature.outside",
+        "onoff",
+        "vent_mode",
+        "eco_mode",
+        "auto_mode",
+        "filter_clog"
+      ],
+      "capabilitiesOptions": {
+        "measure_humidity.panel": {
+          "title": {
+            "en": "Panel humidity"
+          }
+        },
+        "measure_temperature.panel": {
+          "title": {
+            "en": "Panel temperature"
+          }
+        },
+        "measure_temperature.outside": {
+          "title": {
+            "en": "Outside temperature"
+          }
+        },
+        "measure_power": {
+          "title": {
+            "en": "Current power"
+          }
+        },
+        "meter_power": {
+          "title": {
+            "en": "Monthly power"
+          }
+        }
+      },
+      "images": {
+        "large": "/drivers/c6/assets/images/large.png",
+        "small": "/drivers/c6/assets/images/small.png"
+      }
+    }
+  ],
+  "capabilities": {
+    "auto_mode": {
+      "type": "boolean",
+      "title": {
+        "en": "AUTO"
+      },
+      "getable": true,
+      "setable": true,
+      "uiComponent": "toggle",
+      "uiQuickAction": true
+    },
+    "eco_mode": {
+      "type": "boolean",
+      "title": {
+        "en": "ECO"
+      },
+      "getable": true,
+      "setable": true,
+      "uiComponent": "toggle",
+      "uiQuickAction": true
+    },
+    "filter_clog": {
+      "type": "number",
+      "title": {
+        "en": "Filter clogging"
+      },
+      "uiComponent": "sensor",
+      "getable": true,
+      "setable": false,
+      "units": {
+        "en": "%"
+      },
+      "min": 0,
+      "max": 100,
+      "step": 1
+    },
+    "vent_mode": {
+      "type": "enum",
+      "title": {
+        "en": "Device mode"
+      },
+      "getable": true,
+      "setable": true,
+      "uiComponent": "picker",
+      "uiQuickAction": false,
+      "values": [
+        {
+          "id": "1",
+          "title": {
+            "en": "Away"
+          }
+        },
+        {
+          "id": "2",
+          "title": {
+            "en": "Home"
+          }
+        },
+        {
+          "id": "3",
+          "title": {
+            "en": "Visitors"
+          }
+        },
+        {
+          "id": "4",
+          "title": {
+            "en": "Boost"
+          }
+        },
+        {
+          "id": "5",
+          "title": {
+            "en": "Kitchen"
+          }
+        },
+        {
+          "id": "6",
+          "title": {
+            "en": "Fireplace"
+          }
+        },
+        {
+          "id": "7",
+          "title": {
+            "en": "OVR"
+          }
+        },
+        {
+          "id": "8",
+          "title": {
+            "en": "Holidays"
+          }
+        }
+      ]
+    }
+  }
+}

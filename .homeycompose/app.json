@@ -1,0 +1,24 @@
+{
+  "id": "com.rassk.komfovent",
+  "version": "0.0.1",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "name": {
+    "en": "Komfovent C6"
+  },
+  "description": {
+    "en": "Adds support for Komfovent C6 controller."
+  },
+  "category": [
+    "climate"
+  ],
+  "permissions": [],
+  "images": {
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png"
+  },
+  "author": {
+    "name": "Rasmus Kuusmann",
+    "email": "rasmus.kuusmann@gmail.com"
+  }
+}

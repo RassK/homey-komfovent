@@ -1,0 +1,15 @@
+{
+    "type": "number",
+    "title": {
+        "en": "Filter clogging"
+    },
+    "uiComponent": "sensor",
+    "getable": true,
+    "setable": false,
+    "units": {
+        "en": "%"
+    },
+    "min": 0,
+    "max": 100,
+    "step": 1
+}

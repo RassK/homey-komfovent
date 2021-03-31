@@ -1,0 +1,10 @@
+{
+    "type": "boolean",
+    "title": {
+        "en": "AUTO"
+    },
+    "getable": true,
+    "setable": true,
+    "uiComponent": "toggle",
+    "uiQuickAction": true
+}

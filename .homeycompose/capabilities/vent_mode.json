@@ -1,0 +1,60 @@
+{
+    "type": "enum",
+    "title": {
+        "en": "Device mode"
+    },
+    "getable": true,
+    "setable": true,
+    "uiComponent": "picker",
+    "uiQuickAction": false,
+    "values": [
+        {
+            "id": "1",
+            "title": {
+                "en": "Away"
+            }
+        },
+        {
+            "id": "2",
+            "title": {
+                "en": "Home"
+            }
+        },
+        {
+            "id": "3",
+            "title": {
+                "en": "Visitors"
+            }
+        },
+        {
+            "id": "4",
+            "title": {
+                "en": "Boost"
+            }
+        },
+        {
+            "id": "5",
+            "title": {
+                "en": "Kitchen"
+            }
+        },
+        {
+            "id": "6",
+            "title": {
+                "en": "Fireplace"
+            }
+        },
+        {
+            "id": "7",
+            "title": {
+                "en": "OVR"
+            }
+        },
+        {
+            "id": "8",
+            "title": {
+                "en": "Holidays"
+            }
+        }
+    ]
+}

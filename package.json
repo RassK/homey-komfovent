@@ -1,0 +1,14 @@
+{
+  "name": "com.rassk.komfovent",
+  "version": "0.0.1",
+  "main": "app.js",
+  "devDependencies": {
+    "@types/homey": "npm:homey-apps-sdk-v3-types@^0.1.0"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "fast-xml-parser": "^3.19.0",
+    "is-ip": "^3.1.0",
+    "node-html-parser": "^3.1.2"
+  }
+}
