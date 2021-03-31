@@ -1,20 +1,20 @@
-### Komfovent C6
+# Komfovent C6
 
 Adds support for Komfovent C6 controller.
 
-### Setup
+# Setup
 
-# Install Node.js
+### Install Node.js
 Download Node.js from the Node.js website and install it on your computer.
 
-# Install homey-cli
+### Install homey-cli
 $ npm install -g homey
 
-# Restore project
+### Restore project
 $ npm install
 
-# Login to your homey
+### Login to your homey
 $ homey login
 
-# Install application
+### Install application
 $ homey app install
