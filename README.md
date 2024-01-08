@@ -1,6 +1,7 @@
 # Komfovent C6
 
 Adds support for Komfovent C6 controller.
+UPDATE: THIS REPO IS DEAD. To actually control your AHU, use modbus based integration!
 
 # Setup
 
